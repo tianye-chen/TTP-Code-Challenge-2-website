@@ -57,8 +57,9 @@ body{
 
 #downArrow{
     position: absolute;
-    top: -50px;
+    color: rgb(255,255,255,0.5);
     left: 50%;
+    bottom: 0;
     font-size: 40px;
     animation: downArrowMove 2s infinite;
 }
