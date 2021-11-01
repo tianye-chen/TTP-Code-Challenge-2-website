@@ -13,3 +13,12 @@ function update(){
 function init(){
     window.setInterval("update()", 1);
 }
+
+// downArrow will only be visible at the top of the page
+window.addEventListener('scroll', () =>{
+    if (window.scrollY > 0){
+        document.getElementById("downArrow").style.opacity = "0";
+    } 
+    else
+        document.getElementById("downArrow").style.opacity = "1";
+})
