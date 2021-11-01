@@ -1,0 +1,116 @@
+body{
+    background-image: linear-gradient(to bottom right, #8EC5FC, #E0C3FC);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.bar{    
+    color: black;
+    background-color: rgb(255,255,255,0.33);
+    box-shadow: 0px 3px 3px rgb(112, 112, 112,0.33);
+    overflow: hidden;
+}
+
+.clock{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding-left: 1%;
+    animation: fadein 1s;
+    display: inline;
+}
+
+.clock p{
+    display: inline;
+}
+
+#master-text-container{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: drop-shadow(0 2px 0 black);
+}
+
+#tianye-chen{
+    color: white;
+    transition: 0.5s;
+}
+
+#name{    
+    position: absolute;
+    font-size: 120px;
+    /*border: 3px solid rgb(112, 112, 112);*/
+    border-radius: 15px;
+    padding-left: 2%;
+    /*background-color: rgba(233, 233, 233, 0.33);*/
+    top: 10px;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {transform: scale(0, 0);}
+    to {transform: scale(1, 1);}
+}
+
+#downArrow{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    font-size: 40px;
+    animation: downArrowMove 2s infinite;
+}
+
+@keyframes downArrowMove {
+    0% {transform:translateY(-10%);}
+    50% {transform:translateY(0);}
+    100%{transform:translateY(-10%);}
+}
+
+#hobby-container{
+    position: absolute;
+    top: 650px;
+    /*border: 3px solid rgb(112, 112, 112);*/
+    padding-right: 75%;
+}
+
+#hobby-text{
+    position: absolute;
+    /*border: 3px solid rgb(112, 112, 112);*/
+    font-size: 75px;
+    left: 37%;
+}
+
+.hobbies {
+    position: relative;
+    font-size: 30px;
+    top: 120px;
+    left: 5%;
+    /*border: 3px solid rgb(112, 112, 112);*/
+    display: inline-block;
+    width: 170%;
+}
+
+.hobby-imgs{
+    display: block;
+    position: relative;
+    filter: drop-shadow(5px 5px 0.1rem rgb(255,255,255,0.33));
+}
+
+#imgTemple{
+    width: 85%;
+    height: 85%;
+    margin-left: 250%;
+    margin-top: -65%;
+    border-radius: 8px;
+}
+
+#imgNewWorld{
+    width: 125%;
+    height: 125%;
+    margin-left: 250%;
+    margin-top: -65%;
+    border-radius: 8px;
+}
